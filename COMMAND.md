@@ -24,7 +24,8 @@ developer tools.
 -   [10. C and C++ Commands](#10-c-and-c-commands)
 -   [11. pip Commands](#11-pip-commands)
 -   [12. npm Commands](#12-npm-commands)
--   [13. Other External Commands](#13-other-external-commands)
+-   [13. Other External Commands](#14-other-external-commands)
+-   [14. git Commands]
 -   [Troubleshooting](#troubleshooting)
 
 ## Installation
@@ -508,6 +509,440 @@ available in your system's PATH.
   GCC       `gcc --version`      Check GCC version
   G++       `g++ --version`      Check G++ version
   Git       `git --version`      Check Git version
+
+#14. Git Commands — NOVA Terminal
+
+NOVA Terminal supports Git-related commands to help developers manage repositories, track code changes, create commits, and work with branches directly from the terminal.
+
+> **Note:** The commands below document standard Git commands. Use only the commands implemented in NOVA Terminal.
+
+## 1. `git init`
+
+**Description:** Initializes a new Git repository in the current directory.
+
+**Syntax:**
+```bash
+git init
+```
+
+**Example:**
+```bash
+nova> git init
+```
+
+**Use case:** Start tracking a new project with Git.
+
+---
+
+## 2. `git status`
+
+**Description:** Displays the current state of the repository, including modified, staged, and untracked files.
+
+**Syntax:**
+```bash
+git status
+```
+
+**Example:**
+```bash
+nova> git status
+```
+
+**Use case:** Check which files have changed before committing.
+
+---
+
+## 3. `git add`
+
+**Description:** Adds file changes to the staging area so they can be included in the next commit.
+
+**Syntax:**
+```bash
+git add <filename>
+git add .
+```
+
+**Examples:**
+```bash
+nova> git add main.py
+nova> git add .
+```
+
+**Use case:** Stage a specific file or all eligible changes in the current directory.
+
+---
+
+## 4. `git commit`
+
+**Description:** Saves the staged changes as a new commit in the repository history.
+
+**Syntax:**
+```bash
+git commit -m "commit message"
+```
+
+**Example:**
+```bash
+nova> git commit -m "Add new features"
+```
+
+**Use case:** Record a meaningful snapshot of your code changes.
+
+---
+
+## 5. `git log`
+
+**Description:** Displays the repository's commit history.
+
+**Syntax:**
+```bash
+git log
+git log --oneline
+```
+
+**Examples:**
+```bash
+nova> git log
+nova> git log --oneline
+```
+
+**Use case:** Review previous commits and understand the project's history.
+
+---
+
+## 6. `git diff`
+
+**Description:** Shows differences between file versions, working-tree changes, and staged changes.
+
+**Syntax:**
+```bash
+git diff
+git diff --staged
+```
+
+**Examples:**
+```bash
+nova> git diff
+nova> git diff --staged
+```
+
+**Use case:** Review code changes before committing them.
+
+---
+
+## 7. `git branch`
+
+**Description:** Lists existing branches or creates a new branch.
+
+**Syntax:**
+```bash
+git branch
+git branch <branch-name>
+```
+
+**Examples:**
+```bash
+nova> git branch
+nova> git branch feature-login
+```
+
+**Use case:** Organize development work into separate branches.
+
+---
+
+## 8. `git checkout`
+
+**Description:** Switches branches or restores files, depending on the options used.
+
+**Syntax:**
+```bash
+git checkout <branch-name>
+git checkout -b <branch-name>
+```
+
+**Examples:**
+```bash
+nova> git checkout main
+nova> git checkout -b feature-login
+```
+
+**Use case:** Switch to an existing branch or create and switch to a new branch.
+
+---
+
+## 9. `git switch`
+
+**Description:** Switches between Git branches. It is a modern alternative to using `git checkout` for branch switching.
+
+**Syntax:**
+```bash
+git switch <branch-name>
+git switch -c <branch-name>
+```
+
+**Examples:**
+```bash
+nova> git switch main
+nova> git switch -c feature-dashboard
+```
+
+**Use case:** Navigate between development branches.
+
+---
+
+## 10. `git merge`
+
+**Description:** Integrates changes from one branch into the currently checked-out branch.
+
+**Syntax:**
+```bash
+git merge <branch-name>
+```
+
+**Example:**
+```bash
+nova> git switch main
+nova> git merge feature-login
+```
+
+**Use case:** Merge completed feature work into the main development branch.
+
+---
+
+## 11. `git clone`
+
+**Description:** Creates a local copy of an existing remote repository.
+
+**Syntax:**
+```bash
+git clone <repository-url>
+```
+
+**Example:**
+```bash
+nova> git clone https://github.com/user/project.git
+```
+
+**Use case:** Download a project from GitHub or another Git hosting service.
+
+---
+
+## 12. `git remote`
+
+**Description:** Manages remote repository connections.
+
+**Syntax:**
+```bash
+git remote -v
+git remote add origin <repository-url>
+```
+
+**Examples:**
+```bash
+nova> git remote -v
+nova> git remote add origin https://github.com/user/project.git
+```
+
+**Use case:** View configured remotes or connect a local repository to a remote repository.
+
+---
+
+## 13. `git fetch`
+
+**Description:** Downloads updates and references from a remote repository without automatically merging them into the current branch.
+
+**Syntax:**
+```bash
+git fetch
+git fetch origin
+```
+
+**Examples:**
+```bash
+nova> git fetch
+nova> git fetch origin
+```
+
+**Use case:** Check for remote updates before integrating them.
+
+---
+
+## 14. `git pull`
+
+**Description:** Fetches remote updates and integrates them into the current branch according to the configured Git behavior.
+
+**Syntax:**
+```bash
+git pull
+git pull origin main
+```
+
+**Examples:**
+```bash
+nova> git pull
+nova> git pull origin main
+```
+
+**Use case:** Update your local branch with remote changes.
+
+---
+
+## 15. `git push`
+
+**Description:** Uploads local commits to a remote repository.
+
+**Syntax:**
+```bash
+git push
+git push origin main
+git push -u origin main
+```
+
+**Examples:**
+```bash
+nova> git push
+nova> git push origin main
+nova> git push -u origin main
+```
+
+**Use case:** Publish your local commits to a remote repository.
+
+---
+
+## 16. `git reset`
+
+**Description:** Moves the current branch reference or changes the staging state, depending on the selected option.
+
+**Syntax:**
+```bash
+git reset <filename>
+git reset --soft HEAD~1
+git reset --hard HEAD~1
+```
+
+**Examples:**
+```bash
+nova> git reset main.py
+nova> git reset --soft HEAD~1
+```
+
+**Use case:** Unstage files or adjust recent commits.
+
+**Warning:** `git reset --hard` can permanently discard uncommitted changes. Use it carefully.
+
+---
+
+## 17. `git stash`
+
+**Description:** Temporarily stores uncommitted changes so you can work on something else.
+
+**Syntax:**
+```bash
+git stash
+git stash list
+git stash pop
+```
+
+**Examples:**
+```bash
+nova> git stash
+nova> git stash list
+nova> git stash pop
+```
+
+**Use case:** Temporarily save your current work without creating a commit.
+
+---
+
+## 18. `git rm`
+
+**Description:** Removes tracked files from the working tree and stages their removal.
+
+**Syntax:**
+```bash
+git rm <filename>
+```
+
+**Example:**
+```bash
+nova> git rm old_file.py
+```
+
+**Use case:** Remove a tracked file from the repository.
+
+---
+
+## 19. `git mv`
+
+**Description:** Moves or renames a tracked file and stages the change.
+
+**Syntax:**
+```bash
+git mv <old-name> <new-name>
+```
+
+**Example:**
+```bash
+nova> git mv old_name.py new_name.py
+```
+
+**Use case:** Rename or move files while keeping Git's change tracking.
+
+---
+
+## 20. `git tag`
+
+**Description:** Creates or lists tags, commonly used to mark release versions.
+
+**Syntax:**
+```bash
+git tag
+git tag <tag-name>
+```
+
+**Examples:**
+```bash
+nova> git tag
+nova> git tag v1.0.0
+```
+
+**Use case:** Mark important milestones or software releases.
+
+---
+
+## Complete Git Workflow Example
+
+The following sequence demonstrates a typical workflow for a project connected to a remote repository.
+
+```bash
+nova> git init
+nova> git status
+nova> git add .
+nova> git commit -m "Initial commit"
+nova> git branch
+nova> git remote add origin https://github.com/user/project.git
+nova> git push -u origin main
+```
+
+**Before running the example:**
+- Ensure Git is installed and available in your system's PATH.
+- Replace the sample repository URL with your actual repository URL.
+- Ensure your current branch is named `main`, or substitute its actual name.
+- Configure Git identity if required:
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+```
+
+## Important Notes
+
+- These are standard Git commands and examples, not a guarantee that every command is implemented as a native NOVA Terminal command.
+- If NOVA Terminal supports direct command execution, use the examples with its prompt. Otherwise, execute them in the underlying system terminal.
+- Commands that modify repository history or delete files should be used carefully.
+- Git operations that access remote repositories may require network connectivity and authentication.
+
+
 
 External commands are not necessarily built into NOVA Terminal. Their
 availability depends on your operating system, installed tools, and how
