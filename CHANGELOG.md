@@ -2,6 +2,25 @@
 
 All notable changes to **NOVA Terminal** are documented in this file.
 
+# 🌪️ NOVA VORTEX
+
+### API Testing Made Simple, Fast & Powerful.
+
+## ⚡ Version 1.0.5 - 2026-11-15
+
+**Latest Release: v1.0.5**
+
+## ✨ Features
+
+- HTTP request testing
+- Multiple HTTP methods
+- Request and response inspection
+- Response headers
+- Status code information
+- HTTP version detection
+- Response timing
+- Response information in terminal
+
 ## [1.0.3] - 2026-10-29
 
 ### Added
