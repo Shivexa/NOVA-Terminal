@@ -2,9 +2,9 @@
 
 **A colourful, AI-powered developer terminal by Shivexa.**
 
-NOVA Terminal is a Python-based terminal project designed to bring a custom command-line experience, AI assistance, and developer workflows together in one interactive environment.
+NOVA Terminal is a Python-based terminal project designed to bring a custom command-line experience, AI assistance, API testing, and developer workflows together in one interactive environment.
 
-NOVA aims to make everyday development tasks more convenient through a colourful interface, custom command handling, and integration with existing developer tools.
+NOVA aims to make everyday development tasks more convenient through a colourful interface, custom command handling, API testing capabilities, and integration with existing developer tools.
 
 ## ✨ Features
 
@@ -15,6 +15,15 @@ NOVA aims to make everyday development tasks more convenient through a colourful
 - 🟢 **Node.js Workflows** — Support for Node.js-related commands.
 - 📦 **Package Management** — Workflows involving pip and npm.
 - 🔧 **Process Execution** — Launch supported external commands through subprocess-based execution.
+- 🌪️ **NOVA VORTEX — API Testing** — An integrated API testing tool for sending HTTP requests and inspecting API responses directly from the terminal.
+  - HTTP methods: GET, POST, PUT, PATCH, DELETE.
+  - Request and response inspection.
+  - HTTP status code information.
+  - Request URL and method details.
+  - HTTP version detection.
+  - Response headers and cookies inspection.
+  - Response time and response size information.
+  - Developer-friendly API debugging experience.
 - 🚀 **Continuous Development** — Ongoing improvements to usability and developer productivity.
 
 *Feature availability and requirements may vary by release.*
@@ -26,19 +35,19 @@ NOVA Terminal is distributed through PyPI.
 Install the package:
 
 ```bash
- pip install shivexa-nova-terminal
+pip install shivexa-nova-terminal
 ```
 
 Upgrade an existing installation:
 
 ```bash
- pip install --upgrade shivexa-nova-terminal
+pip install --upgrade shivexa-nova-terminal
 ```
 
 Verify the installed package version:
 
 ```bash
- pip show shivexa-nova-terminal
+pip show shivexa-nova-terminal
 ```
 
 For AI features or Python and Node.js workflows, additional configuration or installed tools may be required.
@@ -47,11 +56,12 @@ For AI features or Python and Node.js workflows, additional configuration or ins
 
 After installation, launch NOVA using the supported entry point provided by the installed release.
 
-For the exact startup command, supported commands, AI configuration, and troubleshooting instructions, refer to the documentation as it is added to this repository.
+For the exact startup command, supported commands, AI configuration, NOVA VORTEX usage, and troubleshooting instructions, refer to the documentation as it is added to this repository.
 
 ## 🛠️ Technology
 
 - Python
+- HTTPX (NOVA VORTEX API testing engine)
 - Subprocess-based command execution
 - Python and Node.js development workflows
 - pip and npm integrations
@@ -64,6 +74,7 @@ For the exact startup command, supported commands, AI configuration, and trouble
 - Improve error handling and reliability
 - Add and refine developer productivity features
 - Strengthen testing and release workflows
+- Expand NOVA VORTEX API testing capabilities
 
 ## 🐛 Bug Reports and Feature Requests
 
