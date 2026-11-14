@@ -667,6 +667,65 @@ NOVA Terminal is a developer-focused command-line tool, not a replacement for ev
 - Features listed in documentation should be verified against the actual implementation before being represented as available.
 
 ---
+# 🌪️ NOVA VORTEX — Features
+
+**Version:** 1.0.5  
+**Developed by:** Shivexa
+
+NOVA VORTEX is a command-line API testing tool built with Python and HTTPX. It helps developers test APIs, send HTTP requests, and inspect detailed response information directly from the terminal.
+
+---
+
+## 🚀 Core Features
+
+### 1. HTTP Methods
+- GET
+- POST
+- PUT
+- PATCH
+- DELETE
+
+### 2. Request Handling
+- Send HTTP requests
+- Custom request headers
+- Request body support
+- URL-based API testing
+
+### 3. Response Inspection
+- Response URL
+- Request method
+- HTTP version
+- Status code
+- Response headers
+- Response cookies
+- Response body
+
+### 4. Performance Information
+- Response time
+- Response size
+- Request execution information
+
+### 5. Terminal Experience
+- Colored terminal output
+- Structured response information
+- Developer-friendly CLI interface
+
+### 6. Error Handling
+- HTTP request errors
+- Connection errors
+- Timeout handling
+- Request debugging information
+
+
+
+## 📌 Release Information
+
+**Current Version:** v1.0.5
+
+**Project:** NOVA VORTEX  
+**Organization:** Shivexa
+
+*Test APIs. Debug Faster. Build Better.*
 
 ## Conclusion
 
