@@ -2,9 +2,9 @@
 
 **A colourful, AI-powered developer terminal by Shivexa.**
 
-NOVA Terminal is a Python-based terminal project designed to bring a custom command-line experience, AI assistance, API testing, and developer workflows together in one interactive environment.
+NOVA Terminal is a Python-based terminal project designed to bring a custom command-line experience, AI assistance, API testing, code analysis, and developer workflows together in one interactive environment.
 
-NOVA aims to make everyday development tasks more convenient through a colourful interface, custom command handling, API testing capabilities, and integration with existing developer tools.
+NOVA aims to make everyday development tasks more convenient through a colourful interface, custom command handling, API testing capabilities, code analysis, and integration with existing developer tools.
 
 ## ✨ Features
 
@@ -12,6 +12,18 @@ NOVA aims to make everyday development tasks more convenient through a colourful
 - 🤖 **AI Mode** — AI-assisted interactions within the terminal.
 - ⚙️ **Custom Commands** — A custom command-handling environment.
 - 🐍 **Python Workflows** — Support for Python development tasks.
+- 🔬 **ZYRA Code Analyzer** — Analyze Python source files and generate detailed HTML analysis reports.
+  - Python file analysis (`.py` only).
+  - Function and class detection.
+  - Loop and conditional statement analysis.
+  - Function call analysis.
+  - Code distribution and structure analysis.
+  - Total lines of code.
+  - Execution time measurement.
+  - Initial and peak memory usage.
+  - File size analysis.
+  - Automatic HTML report generation.
+  - Opens the generated analysis report in the default browser.
 - 🟢 **Node.js Workflows** — Support for Node.js-related commands.
 - 📦 **Package Management** — Workflows involving pip and npm.
 - 🔧 **Process Execution** — Launch supported external commands through subprocess-based execution.
@@ -56,6 +68,16 @@ For AI features or Python and Node.js workflows, additional configuration or ins
 
 After installation, launch NOVA using the supported entry point provided by the installed release.
 
+### ZYRA Code Analysis
+
+Analyze a Python file and generate an HTML report:
+
+```bash
+zyra main.py
+```
+
+ZYRA generates a detailed analysis report and opens it in your default browser.
+
 For the exact startup command, supported commands, AI configuration, NOVA VORTEX usage, and troubleshooting instructions, refer to the documentation as it is added to this repository.
 
 ## 🛠️ Technology
@@ -66,6 +88,7 @@ For the exact startup command, supported commands, AI configuration, NOVA VORTEX
 - Python and Node.js development workflows
 - pip and npm integrations
 - AI capabilities
+- Python code analysis and HTML reporting
 
 ## 🗺️ Project Roadmap
 
@@ -75,6 +98,7 @@ For the exact startup command, supported commands, AI configuration, NOVA VORTEX
 - Add and refine developer productivity features
 - Strengthen testing and release workflows
 - Expand NOVA VORTEX API testing capabilities
+- Enhance ZYRA code analysis and reporting
 
 ## 🐛 Bug Reports and Feature Requests
 
