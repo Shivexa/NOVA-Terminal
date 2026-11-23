@@ -276,6 +276,36 @@ On some Windows installations, the launcher may be:
 py app.py
 ```
 
+## ZYRA – Python Code Analyzer
+
+### Command
+`zyra <filename.py>`
+
+### Usage
+`zyra main.py`
+`zyra test.py`
+
+### Description
+ZYRA analyzes Python source code and generates a detailed HTML analysis report.
+
+### Features
+- Function and class detection
+- Loop and conditional analysis
+- Function call analysis
+- Code distribution
+- Total lines of code
+- Execution time
+- Initial and peak memory usage
+- File size
+- Code structure analysis
+
+### Output
+Generates a detailed HTML analysis report (`analysis.html`) and automatically opens it in the default browser.
+
+### Supported Files
+Python (`.py`) only.
+
+
 ### Start a Python backend
 
 For a project with `server.py` as its entry point:
