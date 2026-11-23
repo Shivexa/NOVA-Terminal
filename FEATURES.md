@@ -117,6 +117,35 @@ These operations can reduce the need to repeatedly enter longer filesystem comma
 
 **Safety consideration:** File deletion and content-erasure operations should be used carefully because they may permanently remove data.
 
+## 🔬 ZYRA – Python Code Analysis & Performance Reporting
+
+ZYRA is an integrated Python code analyzer designed to help developers understand their code structure and performance through a detailed HTML report.
+
+### Features
+
+- **Code Structure Analysis** – Analyzes the structure of Python source code.
+- **Function & Class Detection** – Identifies functions, classes, and their definitions.
+- **Loop Analysis** – Detects loops used in the source code.
+- **Conditional Analysis** – Identifies conditional statements such as `if`, `elif`, and `else`.
+- **Function Call Analysis** – Analyzes function calls within the code.
+- **Code Distribution** – Provides a visual breakdown of code components.
+- **Execution Time** – Measures how much time the code takes to execute.
+- **Memory Analysis** – Tracks initial and peak memory usage.
+- **File Size Analysis** – Displays the size of the analyzed Python file.
+- **HTML Report Generation** – Generates a detailed visual report containing analysis results and metrics.
+
+### Usage
+
+```bash
+zyra main.py
+```
+
+### Output
+
+ZYRA automatically generates an HTML analysis report and opens it in the default browser.
+
+**Supported Files:** Python (`.py`) only.
+
 ### 2.3 File Reading and Writing
 
 NOVA provides commands for working with text files.
