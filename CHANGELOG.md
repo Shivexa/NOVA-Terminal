@@ -2,6 +2,27 @@
 
 All notable changes to **NOVA Terminal** are documented in this file.
 
+# Changelog
+
+## [v.1.0.6] – 2026-11-23
+
+### Added
+- **ZYRA Python Code Analyzer** – Introduced a new code analysis tool for Python files.
+- **HTML Analysis Reports** – Automatically generates a detailed HTML report after code analysis.
+- **Code Structure Analysis** – Detects functions, classes, loops, conditional statements, and function calls.
+- **Performance Metrics** – Tracks execution time, memory usage (initial and peak), and file size.
+- **Visual Code Distribution** – Provides a visual breakdown of Python code analysis results.
+- **Automatic Report Opening** – Opens the generated HTML report in the default browser.
+
+### Supported
+- Python (`.py`) files only.
+
+### Usage
+```bash
+zyra filename.py
+```
+
+
 # 🌪️ NOVA VORTEX
 
 ### API Testing Made Simple, Fast & Powerful.
